@@ -1,0 +1,28 @@
+[project]
+name = "imgscope"
+version = "0.1.0"
+description = "Byte-level image decoder and forensics toolkit"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Frodrinos" }]
+keywords = ["image", "decoder", "forensics", "png", "bmp", "jpeg", "gif"]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pillow>=10.0"]
+
+[project.scripts]
+imgscope = "imgscope.cli.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

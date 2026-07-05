@@ -1,1 +1,22 @@
-.venv 
+# Python
+__pycache__/
+*.py[cod]
+*imgscope.egg-info/
+.eggs/
+build/
+dist/
+venv/
+.venv/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
